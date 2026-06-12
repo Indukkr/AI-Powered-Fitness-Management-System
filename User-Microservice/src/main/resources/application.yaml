@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: User-Microservice
+
+  datasource:
+      url: jdbc:postgresql://localhost:5432/fitness-user-microservice
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+
+
+  jpa:
+      hibernate:
+        ddl-auto: update
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+server:
+  port: 8081
