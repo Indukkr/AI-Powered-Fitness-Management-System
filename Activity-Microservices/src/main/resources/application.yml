@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Activity-Microservices
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/fitness-activity-microservice
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      default: http://localhost:8761/eureka/
+
+
